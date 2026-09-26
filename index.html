@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Tools Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div class="screen" id="loginScreen">
+    <div class="top">
+      <h1>AI Tools <span>Hub</span></h1>
+      <p>Find the right tool, every year.</p>
+    </div>
+
+    <div class="card">
+      <form id="loginForm">
+        <div class="input-group">
+          <span class="icon">✉️</span>
+          <input type="email" placeholder="Email address" required>
+        </div>
+        <div class="input-group">
+          <span class="icon">🔒</span>
+          <input type="password" id="pw" placeholder="Password" required>
+          <span class="toggle" id="toggle">👁️</span>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <p class="switch-text">Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- TOOLS SCREEN -->
+  <div class="screen hidden" id="toolsScreen">
+    <div class="tools-header">
+      <h2>AI Productivity Tools</h2>
+      <p>Compare the go-to tool by category</p>
+    </div>
+
+    <div class="chip-row" id="chipRow">
+      <span class="chip active" data-year="2025">2025</span>
+      <span class="chip" data-year="2026">2026</span>
+    </div>
+
+    <div class="tool-list" id="toolList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
