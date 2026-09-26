@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #0d0d0d;
+  font-family: sans-serif;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* LOGIN */
+.top {
+  background: linear-gradient(160deg, #c6ff3d, #9fe000);
+  color: #111;
+  padding: 60px 25px 50px;
+  border-radius: 0 0 40px 40px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.top h1 span {
+  -webkit-text-stroke: 1.5px #111;
+  color: transparent;
+}
+
+.top p {
+  margin: 8px 0 0;
+  font-weight: bold;
+}
+
+.card {
+  padding: 30px 25px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 30px;
+  padding: 14px 18px;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+}
+
+.toggle {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #c6ff3d, #9fe000);
+  color: #111;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #999;
+}
+
+.switch-text a {
+  color: #c6ff3d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* TOOLS */
+.tools-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.tools-header h2 {
+  margin: 0;
+  color: #c6ff3d;
+}
+
+.tools-header p {
+  color: #999;
+  font-size: 13px;
+}
+
+.chip-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.chip {
+  padding: 8px 24px;
+  border-radius: 20px;
+  background: #1c1c1c;
+  font-weight: bold;
+  color: #999;
+}
+
+.chip.active {
+  background: #c6ff3d;
+  color: #111;
+}
+
+.tool-list {
+  padding: 0 16px 30px;
+}
+
+.tool-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.tool-row .label {
+  font-size: 12px;
+  color: #999;
+}
+
+.tool-row .name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #c6ff3d;
+  margin-top: 2px;
+}
